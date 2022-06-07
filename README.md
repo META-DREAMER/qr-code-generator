@@ -13,7 +13,7 @@ steps:
       content: "${{ steps.deploy.outputs.preview_url }}"
   # Use the QR Code in another step, e.g. to embed the image in a slack message
   - name: Do Something
-    run: echo ${{ steps.qrcode.output.data }}
+    run: echo ${{ steps.qrcode.outputs.data }}
 ```
 
 ### Set up required parameters
